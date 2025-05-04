@@ -1,0 +1,458 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #121212;
+    color: white;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Sidebar styles */
+  .dashboard-sidebar {
+    width: 320px;
+    background-color: #1a1a1a;
+    border-right: 1px solid #333;
+    overflow-y: auto;
+    padding: 16px;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .user-badge {
+    background-color: #333;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  .crisis-info {
+    color: #e0e0e0;
+  }
+  
+  .crisis-info h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  
+  .status-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .active-status {
+    color: #FF4500;
+  }
+  
+  .update-time {
+    color: #888;
+  }
+  
+  .crisis-detail-card {
+    background-color: #222;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .crisis-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .crisis-header h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .crisis-status {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  .crisis-status.active {
+    background-color: #FF4500;
+  }
+  
+  .crisis-status.pending {
+    background-color: #FFA500;
+  }
+  
+  .crisis-status.resolved {
+    background-color: #32CD32;
+  }
+  
+  .crisis-category {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  
+  .crisis-category .fire {
+    color: #FF4500;
+  }
+  
+  .crisis-category .flood {
+    color: #4682B4;
+  }
+  
+  .crisis-category .medical {
+    color: #FF0000;
+  }
+  
+  .crisis-category .crime {
+    color: #8B0000;
+  }
+  
+  .crisis-description {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+  
+  .crisis-meta {
+    margin-bottom: 16px;
+  }
+  
+  .meta-item {
+    margin-bottom: 10px;
+  }
+  
+  .meta-item label {
+    font-size: 12px;
+    color: #888;
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  .address-box, .reporter-box {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .reporter-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .reporter-name {
+    font-weight: 500;
+  }
+  
+  .report-time {
+    color: #888;
+    font-size: 12px;
+  }
+  
+  .crisis-severity h4, .responder-info h4 {
+    font-size: 16px;
+    margin: 0 0 8px 0;
+  }
+  
+  .severity-bar {
+    height: 8px;
+    background-color: #333;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    overflow: hidden;
+  }
+  
+  .severity-indicator {
+    height: 100%;
+    border-radius: 4px;
+  }
+  
+  .severity-indicator.low {
+    background-color: #32CD32;
+  }
+  
+  .severity-indicator.medium {
+    background-color: #FFA500;
+  }
+  
+  .severity-indicator.high {
+    background-color: #FF4500;
+  }
+  
+  .severity-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .responder-info {
+    margin-top: 16px;
+  }
+  
+  .responder-count {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  
+  .responder-number {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .respond-button {
+    width: 100%;
+    background-color: #4169E1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .respond-button:hover {
+    background-color: #3254b5;
+  }
+  
+  .report-crisis-button {
+    width: 100%;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+  }
+  
+  .report-crisis-button:hover {
+    background-color: #d63a00;
+  }
+  
+  /* Map section styles */
+  .map-section {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .view-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+    height: 50px;
+  }
+  
+  .city-tabs button, .view-toggle button {
+    background: none;
+    border: none;
+    color: #888;
+    padding: 6px 12px;
+    margin-right: 8px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .city-tabs button.active, .view-toggle button.active {
+    background-color: #333;
+    color: white;
+  }
+  
+  .crisis-list-view {
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    padding: 16px;
+  }
+  
+  .crisis-list-view h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+  
+  .crisis-list-item {
+    display: flex;
+    background-color: #222;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .crisis-list-item:hover {
+    transform: translateY(-2px);
+  }
+  
+  .crisis-list-item.selected {
+    border: 1px solid #4169E1;
+  }
+  
+  .crisis-indicator {
+    width: 8px;
+    flex-shrink: 0;
+  }
+  
+  .crisis-indicator.fire {
+    background-color: #FF4500;
+  }
+  
+  .crisis-indicator.flood {
+    background-color: #4682B4;
+  }
+  
+  .crisis-indicator.medical {
+    background-color: #FF0000;
+  }
+  
+  .crisis-indicator.crime {
+    background-color: #8B0000;
+  }
+  
+  .crisis-indicator.other {
+    background-color: #FFA500;
+  }
+  
+  .crisis-list-content {
+    padding: 12px;
+    flex: 1;
+  }
+  
+  .crisis-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  
+  .crisis-list-header h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .status-badge {
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  
+  .status-badge.active {
+    background-color: #FF4500;
+  }
+  
+  .status-badge.pending {
+    background-color: #FFA500;
+  }
+  
+  .status-badge.resolved {
+    background-color: #32CD32;
+  }
+  
+  .crisis-list-description {
+    font-size: 13px;
+    color: #ccc;
+    margin: 6px 0;
+    line-height: 1.3;
+  }
+  
+  .crisis-list-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .floating-report-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #FF4500;
+    color: white;
+    font-size: 24px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+  }
+  
+  .floating-report-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Custom Leaflet styles */
+  .crisis-marker {
+    border-radius: 50%;
+    text-align: center;
+  }
+  
+  .crisis-marker.high {
+    border: 2px solid #FF4500;
+  }
+  
+  .crisis-marker.medium {
+    border: 2px solid #FFA500;
+  }
+  
+  .crisis-marker.low {
+    border: 2px solid #32CD32;
+  }
+  
+  .crisis-popup h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+  }
+  
+  .crisis-popup p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Responsive styles for mobile */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+    
+    .dashboard-sidebar {
+      width: 100%;
+      height: 40%;
+      border-right: none;
+      border-bottom: 1px solid #333;
+    }
+    
+    .map-section {
+      height: 60%;
+    }
+  }

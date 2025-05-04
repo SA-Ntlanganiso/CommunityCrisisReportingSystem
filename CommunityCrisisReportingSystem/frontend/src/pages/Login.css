@@ -1,0 +1,118 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+  }
+  
+  .login-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-card h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 24px;
+    text-align: center;
+    color: #ff4500; /* Red accent */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 14px;
+    transition: border-color 0.2s;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #ff4500; /* Red accent */
+  }
+  
+  .error-message {
+    color: #ff4500; /* Red accent */
+    background-color: rgba(255, 69, 0, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .success-message {
+    color: #32CD32;
+    background-color: rgba(50, 205, 50, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff4500; /* Red accent */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+  }
+  
+  .login-button:hover {
+    background-color: #e03c00;
+  }
+  
+  .login-button.loading {
+    background-color: #e03c00;
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+  
+  .login-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+  }
+  
+  .login-links a {
+    color: #ff4500; /* Red accent */
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .login-links a:hover {
+    color: #e03c00;
+  }
+  
