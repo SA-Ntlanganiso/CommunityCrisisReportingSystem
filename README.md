@@ -1,99 +1,40 @@
-Community Crisis Management System 🚨
+# 🚨 Community Crisis Management System
+
 A full-stack web application for reporting, managing, and responding to community crises with real-time notifications and role-based access control.
 
-Key Features ✨
-Multi-role Dashboard System:
+## 🌟 Key Features
 
-👨‍💼 Admin: User management & crisis oversight
+### 👥 Multi-role Dashboard System
+| Role | Capabilities |
+|------|-------------|
+| 👨‍💼 Admin | User management & crisis oversight |
+| 🚑 Responder | Crisis assignment & status updates |
+| 👥 Citizen | Crisis reporting & notifications |
 
-🚑 Responder: Crisis assignment & status updates
+### ⚡ Core Functionalities
+- 📍 Crisis reporting with geolocation
+- 🔔 Real-time email notifications
+- 📊 Dashboard analytics & statistics
+- 🔄 Status workflow management (Pending → Assigned → Resolved)
 
-👥 Citizen: Crisis reporting & notifications
+## 🛠️ Tech Stack
 
-Core Functionalities:
+### 📱 Frontend
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-📍 Crisis reporting with geolocation
+### ⚙️ Backend
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white)
+![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 
-🔔 Real-time email notifications
+### 🗄️ Database
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-📊 Dashboard analytics & statistics
+### 🔐 Authentication
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)
+![BCrypt](https://img.shields.io/badge/BCrypt-525252?style=for-the-badge&logo=bcrypt&logoColor=white)
 
-🔄 Status workflow management (Pending → Assigned → Resolved)
-
-Technical Highlights:
-
-🔒 JWT Authentication & Authorization
-
-📱 Responsive React frontend
-
-🚀 Spring Boot backend
-
-🗄 PostgreSQL database
-
-🔄 RESTful API architecture
-
-Tech Stack 💻
-Category	Technologies
-Frontend	React, React Router, Axios, CSS3
-Backend	Spring Boot, Spring Security, Spring Data JPA
-Database	PostgreSQL
-Auth	JWT, BCrypt Password Encoding
-DevOps	Maven, Git
-Project Structure 📂
-community-crisis-system/
-├── frontend/               # React application
-│   ├── public/             # Static assets
-│   └── src/                # React components
-│       ├── contexts/       # Auth context
-│       ├── pages/          # Application views
-│       └── styles/         # CSS files
-│
-├── backend/                # Spring Boot application
-│   ├── src/main/java/
-│   │   ├── config/         # Security configurations
-│   │   ├── controller/     # REST controllers
-│   │   ├── model/          # Entity classes
-│   │   ├── repository/     # JPA repositories
-│   │   ├── service/        # Business logic
-│   │   └── security/       # Auth components
-│   └── src/main/resources/ # Application properties
-│
-└── README.md               # Project documentation
-Installation ⚙️
-Backend Setup:
-
-bash
-cd backend
-mvn spring-boot:run
-Frontend Setup:
-
-bash
-cd frontend
-npm install
-npm start
-Contributing 🤝
-We welcome contributions! Please fork the repository and create a pull request with your improvements.
-
-License 📜
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Why This Project? ❓
-This system addresses critical community needs by:
-
-Providing real-time crisis reporting
-
-Enabling efficient emergency response
-
-Offering transparent communication between citizens and responders
-
-Reducing response times through organized workflows
-
-Perfect for:
-
-🏙 Municipal emergency services
-
-🏘 Community watch programs
-
-🚒 Disaster response organizations
-
-This description provides a comprehensive overview while being visually appealing with emojis and clear section organization. It highlights both the technical and practical aspects of the project, making it attractive to both developers and potential users/organizations who might benefit from the system.
+## 📂 Project Structure
