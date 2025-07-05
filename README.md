@@ -38,7 +38,7 @@ A full-stack web application for reporting, managing, and responding to communit
 ![BCrypt](https://img.shields.io/badge/BCrypt-525252?style=for-the-badge&logo=bcrypt&logoColor=white)
 
 ## 📂 Project Structure
-## 📂 **Project Structure**  
+ 
 ```bash
 community-crisis-system/
 ├── frontend/          # React App
